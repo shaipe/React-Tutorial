@@ -12,6 +12,8 @@ React.js（React）是 Facebook 推出的一个用来构建用户界面的 JavaS
     - [Data Flow](#DataFlow)
 - [React 特点](#React特点)
 - [React环境搭建](#React环境搭建)
+    - [官方快速搭建](#官方快速搭建)
+    - [Webpack搭建](#Webpack搭建)
 - [React-Native环境搭建](https://reactnative.cn/docs/getting-started/)
 
 
@@ -58,11 +60,34 @@ React 应用都是构建在组件之上。
 )
 - 假如你们这两个环境已经配置好，那么快和我一起开始React之旅吧
 
+### 官方快速搭建
+安装好环境以后，只需要按照官网的指引安装 `create-react-app` 即可。
+```bash
+npm install -g create-react-app
+```
+这条命令会往我们的机器上安装一条叫 `create-react-app` 的命令，安装好以后就可以直接使用它来构建一个 react 的前端工程：
+
+```bash
+create-react-app hello-react
+```
+
+这条命令会帮我们构建一个叫 `hello-react` 的工程，并且会自动地帮助我们安装所需要的依赖，现在只需要安静地等待它安装完。
+
+下载完以后我们就可以启动工程了，进入工程目录然后通过 npm 启动工程：
+
+```bash
+cd hello-react
+npm start
+```
+
+[Reactjs官方教程](https://github.com/facebook/create-react-app)
+
+### 基于webpack环境配置
 ```bash
 # 进入项目主目录
 cd dir
 # 创建项目配置文件
-npm init!
+npm init
 # 配置Bebel  
 npm install --save-dev babel-preset-react
 npm install --save-dev babel-core
@@ -70,6 +95,9 @@ npm install --save-dev babel-loader
 npm install --save-dev babel-preset-es2015
 #  安装React、React-dom
 npm install --save-dev react react-dom
+
+# 不使用Webpack时可以使用如下命令运行React
+npm start
 
 # 安装webpack，并进行配置
 npm install --save-dev webpack
