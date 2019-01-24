@@ -12,7 +12,7 @@ React.js（React）是 Facebook 推出的一个用来构建用户界面的 JavaS
     - [Data Flow](#DataFlow)
 - [React 特点](#React特点)
 - [React环境搭建](#React环境搭建)
-    - [官方快速搭建](#官方快速搭建)
+    - [官方快速搭建](#官方快速搭建)
     - [Webpack搭建](#Webpack搭建)
 - [React-Native环境搭建](https://reactnative.cn/docs/getting-started/)
 
